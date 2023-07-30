@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+html {
+    background-color: black;
+}
+header {
+    background-image: url(./header-background.jpg);
+    height: 90vh;
+}
+hr {
+    height: 10px;
+    background-color: #232323;
+    border: 0px;
+}
+.container {
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+.nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 25px 180px;
+}
+.right-half {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+    align-items: center;
+}
+.drop-down {
+    position: relative;
+}
+.language {
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 6px;
+    padding: 5px 10px 5px 40px;
+    font-size: 18px;
+    z-index: 1;
+}
+.globe {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    z-index: 2;
+}
+.arrow {
+    position: absolute;
+    right: -2px;
+    top: 4px;
+    z-index: 0;
+}
+.btn {
+    background-color: #e50914;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px 20px;
+}
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    gap: 30px;
+    padding-top: 150px;
+}
+.get-started, .s5-b{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    width: 60%;
+    margin-top: 20px;
+    gap: 10px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+p {
+    font-size: 22px;
+    font-weight: bold;
+}
+.content > p:nth-child(3) {
+    font-size: 20px;
+}
+.content > div > input, .s5-b > input {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    padding: 15px 5px;
+    border-radius: 6px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+.content > div > button, .s5-b > button {
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sec-1, .sec-2, .sec-3, .sec-4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    gap: 50px;
+}
+.sec-3 {
+    gap: 0px;
+}
+.sec-4 {
+    padding-left: 80px;
+}
+.s1-l, .s2-r, .s3-l, .s4-r {
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+.s1-r, .s3-r {
+    width: 30%;
+    position: relative;
+}
+.s1-r > img, .s2-l > img, .s3-r > img, .s4-l > img{
+    width: 500px;
+}
+.s1-r > video, .s3-r > video {
+    position: absolute;
+    top: 79px;
+    width: 360px;
+    left: 68px;
+    z-index: -1;
+}
+.s3-r > video {
+    width: 305px;
+    top: 45px;
+    left: 95px;
+}
+.s2-l {
+    position: relative;
+}
+.s2-l > div {
+    position: absolute;
+    border: 2px solid #232323;
+    background-color: black;
+    bottom: 0;
+    left: 120px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 5px 10px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.s2-l > div > img {
+    width: 50px;
+}
+.s2-l > div > div {
+    flex-grow: 1;
+}
+.s2-l > div > div > i {
+    color: blue;
+}
+.s3-l, .s4-r {
+    width: 40%;
+}
+.sec-5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+.sec-5 > h1 {
+    align-self: center;
+    margin-bottom: 20px;
+}
+.sec-5 > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    transition-duration: 0.5s;
+}
+.sec-5 > div:hover {
+    background-color: #737070;
+}
+.sec-5 > div > p, .sec-5 > div > span {
+    font-size: 30px;
+}
+.s5-b, .sec-5 > p {
+    align-self: center;
+    background-color: transparent !important;
+}
+.sec-5 > p{
+    margin-top: 50px;
+}
+.s5-b {
+    margin-top: 0px;
+}
+footer {
+    width: 80%;
+    margin: 90px auto;
+}
+footer > p:nth-child(1) {
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-weight: 50 !important;
+}
+footer a {
+    color: white;
+    font-weight: 50 !important;
+}
+.links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 250px;
+    margin-bottom: 50px;
+}
+.links > div {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+.ni {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 40px 0px 90px;
+}
+.arrow-1 {
+    position: absolute;
+    left: 112px;
+    top: 4px;
+    z-index: -1;
+}
